@@ -1,9 +1,7 @@
-require("../../WebModule/lib/Reflection.js");
-require("../../WebModule/lib/Console.js");
-require("../../WebModule/lib/Valid.js");
-require("../../WebModule/lib/Help.js");
-require("../../WebModule/lib/Task.js");
-require("../../WebModule/lib/Test.js");
+// Easing test
+
+require(".././test/wmtools.js");
 require("../lib/Easing.js");
-require("../release/Easing.min.n.js");
+require("../release/Easing.n.min.js");
 require("./testcase.js");
+

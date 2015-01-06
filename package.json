@@ -1,6 +1,6 @@
 {
   "name": "uupaa.easing.js",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Easing functions.",
   "url": "https://github.com/uupaa/Easing.js",
   "keywords": ["easing", "util", "uupaa", "WebModule", "Unstable"],
@@ -32,15 +32,19 @@
     "label": ["@dev"],
     "browser": {
       "source": ["lib/Easing.js"],
-      "output": "release/Easing.min.b.js"
+      "output": "release/Easing.b.min.js"
     },
     "worker": {
       "source": ["lib/Easing.js"],
-      "output": "release/Easing.min.w.js"
+      "output": "release/Easing.w.min.js"
     },
     "node": {
       "source": ["lib/Easing.js"],
-      "output": "release/Easing.min.n.js"
+      "output": "release/Easing.n.min.js"
+    },
+    "nw": {
+      "source": ["lib/Easing.js"],
+      "output": "release/Easing.nw.min.js"
     }
   },
   "dependencies": {},
