@@ -1,23 +1,39 @@
 var ModuleTestEasing = (function(global) {
 
-var _isNodeOrNodeWebKit = !!global.global;
-var _runOnNodeWebKit =  _isNodeOrNodeWebKit && /native/.test(setTimeout);
-var _runOnNode       =  _isNodeOrNodeWebKit && !/native/.test(setTimeout);
-var _runOnWorker     = !_isNodeOrNodeWebKit && "WorkerLocation" in global;
-var _runOnBrowser    = !_isNodeOrNodeWebKit && "document" in global;
+global["BENCHMARK"] = false;
 
-return new Test("Easing", {
-        disable:    false,
-        browser:    true,
-        worker:     false,
-        node:       false,
-        nw:         true,
-        button:     true,
-        both:       false, // test the primary module and secondary module
+var test = new Test("Easing", {
+        disable:    false, // disable all tests.
+        browser:    true,  // enable browser test.
+        worker:     false, // enable worker test.
+        node:       false, // enable node test.
+        nw:         true,  // enable nw.js test.
+        button:     true,  // show button.
+        both:       false, // test the primary and secondary modules.
+        ignoreError:false, // ignore error.
+        callback:   function() {
+        },
+        errorback:  function(error) {
+        }
     }).add([
         testEasing
-    ]).run().clone();
+    ]);
 
+if (IN_BROWSER || IN_NW) {
+    test.add([
+        // browser and node-webkit test
+    ]);
+} else if (IN_WORKER) {
+    test.add([
+        // worker test
+    ]);
+} else if (IN_NODE) {
+    test.add([
+        // node.js and io.js test
+    ]);
+}
+
+// --- test cases ------------------------------------------
 function testEasing(test, pass, miss) {
     var range = { start: 20, end: 300, time: 1000 };
 
@@ -108,5 +124,8 @@ function _move(start, end, time, callback) {
     })();
 }
 
-})((this || 0).self || global);
+
+return test.run();
+
+})(GLOBAL);
 

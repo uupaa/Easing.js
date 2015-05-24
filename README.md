@@ -11,12 +11,12 @@ Easing functions
     - [Slide](http://uupaa.github.io/Slide/slide/WebModule/index.html)
     - [Development](https://github.com/uupaa/WebModule/wiki/Development)
 
-## How to use
+## Run on
 
-### Browser
+### Browser and node-webkit
 
 ```js
-<script src="lib/Easing.js">
+<script src="lib/Easing.js"></script>
 <script>
 var range = { start: 20, end: 300, time: 1000 };
 
@@ -54,7 +54,6 @@ var div         = document.body.appendChild( document.createElement("div") );
 ```js
 importScripts("lib/Easing.js");
 
-...
 ```
 
 ### Node.js
@@ -62,6 +61,5 @@ importScripts("lib/Easing.js");
 ```js
 require("lib/Easing.js");
 
-...
 ```
 
