@@ -1,22 +1,19 @@
-# Easing.js [![Build Status](https://travis-ci.org/uupaa/Easing.js.png)](http://travis-ci.org/uupaa/Easing.js)
+# Easing.js [![Build Status](https://travis-ci.org/uupaa/Easing.js.svg)](https://travis-ci.org/uupaa/Easing.js)
 
-[![npm](https://nodei.co/npm/uupaa.easing.js.png?downloads=true&stars=true)](https://nodei.co/npm/uupaa.easing.js/)
+[![npm](https://nodei.co/npm/uupaa.easing.js.svg?downloads=true&stars=true)](https://nodei.co/npm/uupaa.easing.js/)
 
-Easing functions
+Easing functions.
 
 ## Document
 
-- [Easing.js wiki](https://github.com/uupaa/Easing.js/wiki/Easing)
-- [WebModule](https://github.com/uupaa/WebModule)
-    - [Slide](http://uupaa.github.io/Slide/slide/WebModule/index.html)
-    - [Development](https://github.com/uupaa/WebModule/wiki/Development)
+- Easing.js made of [WebModule](https://github.com/uupaa/WebModule).
+- [Spec](https://github.com/uupaa/Easing.js/wiki/Easing)
 
-## Run on
-
-### Browser and node-webkit
+## Browser and NW.js(node-webkit)
 
 ```js
-<script src="lib/Easing.js"></script>
+<script src="<your-install-dir>/lib/WebModule.js"></script>
+<script src="<your-install-dir>/lib/Easing.js"></script>
 <script>
 var range = { start: 20, end: 300, time: 1000 };
 
@@ -49,17 +46,19 @@ var div         = document.body.appendChild( document.createElement("div") );
 </script>
 ```
 
-### WebWorkers
+## WebWorkers
 
 ```js
-importScripts("lib/Easing.js");
+importScripts("<your-install-dir>lib/WebModule.js");
+importScripts("<your-install-dir>lib/Easing.js");
 
 ```
 
-### Node.js
+## Node.js
 
 ```js
-require("lib/Easing.js");
+require("<your-install-dir>lib/WebModule.js");
+require("<your-install-dir>lib/Easing.js");
 
 ```
 

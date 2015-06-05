@@ -105,14 +105,14 @@ function _move(start, end, time, callback) {
         currentTime = Date.now() - startTime;
 
         var finished = currentTime >= endTime;
-        var keys = Object.keys(Easing.functions);
+        var keys = Object.keys(WebModule.Easing.functions);
 
         for (var i = 0, iz = keys.length; i < iz; ++i) {
-            var x = Easing[keys[i]](finished ? endTime
-                                             : currentTime,
-                                    startValue,
-                                    endValue - startValue,
-                                    endTime);
+            var x = WebModule.Easing[keys[i]](finished ? endTime
+                                                       : currentTime,
+                                              startValue,
+                                              endValue - startValue,
+                                              endTime);
 
             particle[i].style.left = x + "px";
         }
