@@ -24,6 +24,7 @@
         "new-cap":          [0],
         "no-shadow":        [0],
         "camelcase":        [0],
+        "no-new-func":      [0],
         "key-spacing":      [0],
         "dot-notation":     [0],
         "comma-dangle":     [0],

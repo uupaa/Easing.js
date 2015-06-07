@@ -12,8 +12,8 @@ Easing functions.
 ## Browser and NW.js(node-webkit)
 
 ```js
-<script src="<your-install-dir>/lib/WebModule.js"></script>
-<script src="<your-install-dir>/lib/Easing.js"></script>
+<script src="<module-dir>/lib/WebModule.js"></script>
+<script src="<module-dir>/lib/Easing.js"></script>
 <script>
 var range = { start: 20, end: 300, time: 1000 };
 
@@ -49,16 +49,16 @@ var div         = document.body.appendChild( document.createElement("div") );
 ## WebWorkers
 
 ```js
-importScripts("<your-install-dir>lib/WebModule.js");
-importScripts("<your-install-dir>lib/Easing.js");
+importScripts("<module-dir>lib/WebModule.js");
+importScripts("<module-dir>lib/Easing.js");
 
 ```
 
 ## Node.js
 
 ```js
-require("<your-install-dir>lib/WebModule.js");
-require("<your-install-dir>lib/Easing.js");
+require("<module-dir>lib/WebModule.js");
+require("<module-dir>lib/Easing.js");
 
 ```
 
