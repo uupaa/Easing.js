@@ -6,8 +6,8 @@ Easing functions.
 
 ## Document
 
-- Easing.js made of [WebModule](https://github.com/uupaa/WebModule).
-- [Spec](https://github.com/uupaa/Easing.js/wiki/Easing)
+- Please refer to [Spec](https://github.com/uupaa/Easing.js/wiki/) and [API Spec](https://github.com/uupaa/Easing.js/wiki/Easing) links.
+- The Easing.js is made of [WebModule](https://github.com/uupaa/WebModule).
 
 ## Browser and NW.js(node-webkit)
 
