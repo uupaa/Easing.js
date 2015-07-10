@@ -49,7 +49,9 @@
     }
   },
   "dependencies": {},
-  "devDependencies": {},
+  "devDependencies": {
+      "uupaa.clock.js": ""
+  },
   "lib": "./lib/",
   "main": "./index.js",
   "author": "uupaa <uupaa.js@gmail.com>",

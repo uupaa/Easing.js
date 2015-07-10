@@ -16,7 +16,8 @@ var test = new Test("Easing", {
         errorback:  function(error) {
         }
     }).add([
-        testEasing
+        testEasing,
+        testJump,
     ]);
 
 if (IN_BROWSER || IN_NW) {
@@ -46,6 +47,19 @@ function testEasing(test, pass, miss) {
             }
         });
     });
+}
+
+function testJump(test, pass, miss) {
+    var div = document.createElement("div");
+    div.style.cssText = "position:absolute; top: 300px; left: 300px; width: 32px; height: 32px; background-color: red";
+
+    document.body.appendChild(div);
+
+    var jump = new Jump(13, 300, function(offset, initValue, currentValue, );
+
+    var clock = new Clock([], { vsync: true });
+
+    clock.on(jump.fn);
 }
 
 function _isOK(x) {
